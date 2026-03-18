@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/homework-react8-review-widget-/static/css/main.e6c13ad2.css",
+    "main.js": "/homework-react8-review-widget-/static/js/main.3fe6c94a.js",
+    "index.html": "/homework-react8-review-widget-/index.html",
+    "main.e6c13ad2.css.map": "/homework-react8-review-widget-/static/css/main.e6c13ad2.css.map",
+    "main.3fe6c94a.js.map": "/homework-react8-review-widget-/static/js/main.3fe6c94a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3fe6c94a.js"
+  ]
+}
