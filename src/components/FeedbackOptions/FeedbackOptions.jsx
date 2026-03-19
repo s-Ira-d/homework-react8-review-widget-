@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import { ButtonsWrapper, FeedbackButton } from "./FeedbackOptions.styled.js";
 
-export default function FeedbackOptions({ options, onLeaveFeedback }) {
-  return (
-    <ButtonsWrapper>
-      {options.map((option) => (
-        <FeedbackButton key={option} onClick={() => onLeaveFeedback(option)}>
-          {option.charAt(0).toUpperCase() + option.slice(1)}
-        </FeedbackButton>
-      ))}
-    </ButtonsWrapper>
-  );
+export default class FeedbackOptions extends Component {
+  render() {
+    const { options, onLeaveFeedback } = this.props;
+
+    return (
+      <ButtonsWrapper>
+        {options.map((option) => (
+          <FeedbackButton key={option} onClick={() => onLeaveFeedback(option)}>
+            {option}
+          </FeedbackButton>
+        ))}
+      </ButtonsWrapper>
+    );
+  }
 }

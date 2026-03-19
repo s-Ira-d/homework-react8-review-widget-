@@ -1,11 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import { SectionWrapper, SectionTitle } from "./Section.styled.js";
 
-export default function Section({ title, children }) {
-  return (
-    <SectionWrapper>
-      <SectionTitle>{title}</SectionTitle>
-      {children}
-    </SectionWrapper>
-  );
+export default class Section extends Component {
+  render() {
+    const { title, children } = this.props;
+
+    return (
+      <SectionWrapper>
+        <SectionTitle>{title}</SectionTitle>
+        {children}
+      </SectionWrapper>
+    );
+  }
 }
